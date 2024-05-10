@@ -4,10 +4,10 @@ export default function About() {
   return (
     <div className="about my-4">
         <div className="row">
-            <div className="col-6">
+            <div className="col-lg-6  col-sm-12">
                 <img src="../../../../../images/blogimage.jpg" alt="" className='w-100'/>
             </div>
-            <div className="col-6">
+            <div className="col-lg-6  col-sm-12">
                 <h2 className='fw-bold'>Hakkımızda</h2>
                 <p className='lh-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.</p>
                 <p className='lh-base'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quidem.</p>
