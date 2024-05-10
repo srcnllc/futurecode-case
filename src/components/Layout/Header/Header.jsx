@@ -4,30 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import dbArray from '../../../data'
 
 export default function Header() {
-  const navList = [
-    {
-      title: 'Ana Sayfa',
-      slug: '/',
-    },
-    {
-      title: 'Hakkımda',
-      slug: '/about',
-    },
-    {
-      title: 'Hizmetler',
-      slug: '/tedavi',
-    },
-    {
-      title: 'Blog',
-      slug: '/blog',
-    },
-    {
-      title: 'İletişim',
-      slug: '/contact',
-    },
-  ];
 
   return (
     <>
@@ -50,17 +29,11 @@ export default function Header() {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/">Ana Sayfa</Nav.Link>
                   <Nav.Link href="/iletisim">İletişim</Nav.Link>
-                  <NavDropdown
-                    title="Blog"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    <NavDropdown.Item href="/blog/blog1">Blog1</NavDropdown.Item>
-                    <NavDropdown.Item href="/blog/blog2">
-                      Blog2
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/blog/blog3">
-                      Blog3
-                    </NavDropdown.Item>
+                  <Nav.Link href="/blog">Blog</Nav.Link>
+                  <NavDropdown title="BlogList" id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                    {dbArray.blogData.map((item,index)=>(
+                        <NavDropdown.Item href={`/blog/${item.id}`} key={index}>{item.title}</NavDropdown.Item>
+                    ))}
                   </NavDropdown>
                 </Nav>
               </Offcanvas.Body>

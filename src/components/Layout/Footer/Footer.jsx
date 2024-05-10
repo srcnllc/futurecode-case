@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, NavLink } from 'react-bootstrap'
+import { Container, NavLink } from 'react-bootstrap'
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="col-md-3 col-sm-6 d-flex flex-column align-items-center">
                     <ul className='list-unstyled d-flex flex-column justify-content-between h-100'>
                         <li className='list-group-item-action'>
-                        <NavLink href='/'>Blog</NavLink>
+                        <NavLink href='/blog'>Blog</NavLink>
                         </li>
                         <li>
                         <NavLink href='/iletisim'>İletişim</NavLink>
