@@ -1,5 +1,7 @@
 import React from 'react'
 import { Container, NavLink } from 'react-bootstrap'
+import { BsInstagram , BsFacebook ,BsTwitterX ,BsWhatsapp ,BsLinkedin  } from 'react-icons/bs';
+
 
 export default function Footer() {
   return (
@@ -12,7 +14,10 @@ export default function Footer() {
                 </div>
                 <div className="col-md-3 col-sm-6 d-flex flex-column align-items-center">
                     <ul className='list-unstyled d-flex flex-column justify-content-between h-100'>
-                        <li className='list-group-item-action'>
+                    <li >
+                        <NavLink href='/'>Ana Sayfa</NavLink>
+                        </li>
+                        <li >
                         <NavLink href='/blog'>Blog</NavLink>
                         </li>
                         <li>
@@ -21,7 +26,15 @@ export default function Footer() {
                     </ul>
                     
                 </div>
-                <div className="col-md-4 col-sm-6 border">3</div>
+                <div className="col-md-4 col-sm-6 d-flex align-items-center justify-content-center">
+                <ul className="nav justify-content-center list-unstyled d-flex">
+                  <li className="ms-3"><a className="" href="#"><BsInstagram color='white'/></a></li>
+                  <li className="ms-3"><a className="" href="#"><BsFacebook color='white'/></a></li>
+                  <li className="ms-3"><a className="" href="#"><BsTwitterX color='white'/></a></li>
+                  <li className="ms-3"><a className="" href="#"><BsLinkedin   color='white'/></a></li>
+                  <li className="ms-3"><a className="" href="#"><BsWhatsapp  color='white'/></a></li>
+                </ul>
+                </div>
             </div>
         </Container>
     </footer>

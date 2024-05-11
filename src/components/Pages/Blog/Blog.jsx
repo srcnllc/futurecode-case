@@ -13,8 +13,8 @@ export default function Blog() {
     <Container>
       <div className="row my-4">
         {data.map((item,index)=>(
-            <div className="col-4 mb-3" key={index}>
-            <Card title={item.title} desc={item.desc} date={item.date} img={item.img} slug={index} id={item.id}/>
+            <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 mb-3" key={index}>
+                <Card title={item.title} desc={item.desc} date={item.date} img={item.img} slug={index} id={item.id}/>
             </div>
         ))}
       </div>
